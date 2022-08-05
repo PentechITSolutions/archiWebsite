@@ -61,6 +61,30 @@
   #project5 {
     display: none;
   }
+
+  .tabs-container {
+    display: block;
+    text-align: center;
+  }
+
+  .tabs-primary {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px;
+    width: 48px;
+    border-radius: 15px;
+  }
+
+  /* Style the active class, and buttons on mouse-over */
+  .activate,
+  .tabs-primary:hover {
+    background-color: #b88d65;
+    color: white;
+  }
 </style>
 
 <body>
@@ -165,7 +189,16 @@
         <h1 class="display-5 mb-4">Visit Our Latest Architecture Projects And Our Innovative Works</h1>
       </div>
       <div class="col-md-12">
-        <div class="project-tab">
+        <div class="tabs-container" id="myDIV">
+          <button onclick="myFunction1()" class="tabs-primary">1</button>
+          <button onclick="myFunction2()" class="tabs-primary activate">2</button>
+          <button onclick="myFunction3()" class="tabs-primary">3</button>
+          <button onclick="myFunction4()" class="tabs-primary">4</button>
+          <button onclick="myFunction5()" class="tabs-primary">5</button>
+          <button onclick="myFunction6()" class="tabs-primary">6</button>
+          <button onclick="myFunction7()" class="tabs-primary">7</button>
+        </div>
+        <!-- <div class="project-tab">
           <a onclick="myFunction1()" id="myBtn1" class="btn btn-primary py-3 px-5 mt-3">1</a>
           <a onclick="myFunction2()" id="myBtn2" class="btn btn-primary py-3 px-5 mt-3">2</a>
           <a onclick="myFunction3()" id="myBtn3" class="btn btn-primary py-3 px-5 mt-3">3</a>
@@ -173,7 +206,7 @@
           <a onclick="myFunction5()" id="myBtn5" class="btn btn-primary py-3 px-5 mt-3">5</a>
           <a onclick="myFunction6()" id="myBtn6" class="btn btn-primary py-3 px-5 mt-3">6</a>
           <a onclick="myFunction7()" id="myBtn7" class="btn btn-primary py-3 px-5 mt-3">7</a>
-        </div>
+        </div> -->
         <div id="project1">
           <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
             <div class="col-lg-2">
@@ -1678,6 +1711,16 @@
           moreText6.style.display = "none";
           moreText7.style.display = "inline";
         }
+      }
+
+      var header = document.getElementById("myDIV");
+      var btns = header.getElementsByClassName("tabs-primary");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("activate");
+          current[0].className = current[0].className.replace(" activate", "");
+          this.className += " activate";
+        });
       }
 
       // function myFunction() {
