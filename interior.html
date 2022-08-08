@@ -34,12 +34,12 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <style>
-  #project {
-    display: inline;
+  #project7 {
+    display: none;
   }
 
   #project1 {
-    display: none;
+    display: inline;
   }
 
   #project6 {
@@ -60,6 +60,27 @@
 
   #project5 {
     display: none;
+  }
+
+  .tabs-container {
+    display: block;
+    text-align: center;
+  }
+
+  .tabs-primary {
+    cursor: pointer;
+    margin: 20px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  /* Style the active class, and buttons on mouse-over */
+  .activate,
+  .tabs-primary:hover {
+    background-color: #b88d65;
+    color: white;
   }
 </style>
 
@@ -120,10 +141,10 @@
         <a href="about.html" class="nav-item nav-link">About</a>
         <a href="service.html" class="nav-item nav-link">Services</a>
         <div class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
+          <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Projects</a>
           <div class="dropdown-menu border-0 m-0">
             <a href="architecture.html" class="dropdown-item">Architecture</a>
-            <a href="interior.html" class="dropdown-item">Interior</a>
+            <a href="interior.html" class="dropdown-item active">Interior</a>
           </div>
         </div>
         <div class="nav-item dropdown">
@@ -163,7 +184,7 @@
         <h4 class="section-title">Interior Projects</h4>
         <h1 class="display-5 mb-4">Visit Our Latest Interior Projects And Our Innovative Works</h1>
       </div>
-      <div id="project">
+      <div id="project1">
         <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
           <div class="col-lg-2">
             <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
@@ -231,7 +252,7 @@
                 </div>
               </div>
 
-              <div class="tab-pane fade show active" id="tab-pane-3">
+              <div class="tab-pane fade show" id="tab-pane-3">
                 <div class="row g-4">
                   <div class="col-md-8" style="min-height: 350px;">
                     <div class="position-relative h-100">
@@ -332,7 +353,7 @@
                     <p><i class="fa fa-user text-primary me-3"></i>Dr.Nagare</p>
                     <!-- <p><i class="fa fa-check text-primary me-3"></i>Built up area : 1,250 Sq.ft</p> -->
                     <p><i class="fa fa-map-marker-alt text-primary me-3"></i>A/p Kalas, Sangamner</p>
-                    <a onclick="myFunction()" id="myBtn" class="btn btn-primary py-3 px-5 mt-3">Next</a>
+                    <!-- <a onclick="myFunction()" id="myBtn" class="btn btn-primary py-3 px-5 mt-3">Next</a> -->
                   </div>
                 </div>
               </div>
@@ -345,7 +366,7 @@
 
 
     <!-- Project part 2 Start -->
-    <div id="project1">
+    <div id="project2">
       <div class="container-xxl project py-5">
         <div class="container">
           <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
@@ -372,7 +393,7 @@
             <div class="col-lg-10">
               <div class="tab-content w-100">
 
-                <div class="tab-pane fade" id="tab-pane-5">
+                <div class="tab-pane fade show active" id="tab-pane-5">
                   <div class="row g-4">
                     <div class="col-md-8" style="min-height: 350px;">
                       <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
@@ -429,13 +450,13 @@
 
                 <div class="tab-pane fade" id="tab-pane-6">
                   <div class="row g-4">
-                    <div class="col-md-10" style="min-height: 350px;">
+                    <div class="col-md-8" style="min-height: 350px;">
                       <div class="position-relative h-100">
                         <img class="position-absolute img-fluid w-100 h-100" src="img/interior_project6.jpeg"
                           style="object-fit: cover;" alt="">
                       </div>
                     </div>
-                    <div class="col-md-10">
+                    <div class="col-md-4">
                       <h1 class="mb-3">Ashiyana</h1>
                       <p class="mb-4">House is a sequence of both interior and
                         exterior spaces, informed by light, material and the
@@ -552,7 +573,7 @@
                       <p><i class="fa fa-user text-primary me-3"></i>Dr.Jitesh Chudiwal</p>
                       <p><i class="fa fa-check text-primary me-3"></i>Built up area : 4,370 Sq.ft</p>
                       <p><i class="fa fa-map-marker-alt text-primary me-3"></i>Vidhyanagar,Sangamner.</p>
-                      <a onclick="myFunction()" id="myBtn1" class="btn btn-primary py-3 px-5 mt-3">Next</a>
+                      <!-- <a onclick="myFunction()" id="myBtn1" class="btn btn-primary py-3 px-5 mt-3">Next</a> -->
                     </div>
                   </div>
                 </div>
@@ -568,7 +589,7 @@
     <!-- 
     project 9 onwards.
  -->
-    <div id="project2">
+    <div id="project3">
       <div class="container-xxl project py-5">
         <div class="container">
           <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
@@ -754,7 +775,7 @@
                       <p><i class="fa fa-user text-primary me-3"></i>Mr.Rameshji Nihlani</p>
                       <p><i class="fa fa-check text-primary me-3"></i>Built up area : 4,150 Sq.ft</p>
                       <p><i class="fa fa-map-marker-alt text-primary me-3"></i>Pawbaki road,Sangamner.</p>
-                      <a onclick="myFunction()" id="myBtn2" class="btn btn-primary py-3 px-5 mt-3">Next</a>
+                      <!-- <a onclick="myFunction()" id="myBtn2" class="btn btn-primary py-3 px-5 mt-3">Next</a> -->
                     </div>
                   </div>
                 </div>
@@ -767,7 +788,7 @@
     <!-- 
   13 onwards
  -->
-    <div id="project3">
+    <div id="project4">
       <div class="container-xxl project py-5">
         <div class="container">
           <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
@@ -794,7 +815,7 @@
             <div class="col-lg-10">
               <div class="tab-content w-100">
 
-                <div class="tab-pane fade" id="tab-pane-13">
+                <div class="tab-pane fade show active" id="tab-pane-13">
                   <div class="row g-4">
                     <div class="col-md-10" style="min-height: 350px;">
                       <div class="position-relative h-100">
@@ -1004,7 +1025,7 @@
                       <p><i class="fa fa-user text-primary me-3"></i>Mr.Shriniwas Gaggad</p>
                       <p><i class="fa fa-check text-primary me-3"></i>Built up area : 9,900 Sq.ft</p>
                       <p><i class="fa fa-map-marker-alt text-primary me-3"></i>Maldad Road,Sangamner.</p>
-                      <a onclick="myFunction()" id="myBtn3" class="btn btn-primary py-3 px-5 mt-3">Next</a>
+                      <!-- <a onclick="myFunction()" id="myBtn3" class="btn btn-primary py-3 px-5 mt-3">Next</a> -->
                     </div>
                   </div>
                 </div>
@@ -1018,7 +1039,7 @@
     <!-- 
     17 onwards
    -->
-    <div id="project4">
+    <div id="project5">
       <div class="container-xxl project py-5">
         <div class="container">
           <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
@@ -1206,7 +1227,7 @@
                       <p><i class="fa fa-user text-primary me-3"></i>Mr.Shriniwas Gaggad.</p>
                       <p><i class="fa fa-check text-primary me-3"></i>Built up area : 9,900 Sq.ft</p>
                       <p><i class="fa fa-map-marker-alt text-primary me-3"></i>Maldad Road,Sangamner.</p>
-                      <a onclick="myFunction()" id="myBtn4" class="btn btn-primary py-3 px-5 mt-3">Next</a>
+                      <!-- <a onclick="myFunction()" id="myBtn4" class="btn btn-primary py-3 px-5 mt-3">Next</a> -->
                     </div>
                   </div>
                 </div>
@@ -1217,7 +1238,15 @@
       </div>
     </div>
 
-
+    <div class="tabs-container" id="myDIV">
+      <button onclick="myFunction1()" class="tabs-primary activate"></button>
+      <button onclick="myFunction2()" class="tabs-primary"></button>
+      <button onclick="myFunction3()" class="tabs-primary"></button>
+      <button onclick="myFunction4()" class="tabs-primary"></button>
+      <button onclick="myFunction5()" class="tabs-primary"></button>
+      <!--<button onclick="myFunction6()" class="tabs-primary"></button>
+  <button onclick="myFunction7()" class="tabs-primary"></button> -->
+    </div>
   </div>
   </div>
   <!-- Project End -->
@@ -1288,73 +1317,303 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script>
-      function myFunction() {
-        // var dots = document.getElementById("dots");
-        var moreText = document.getElementById("project");
+
+      function myFunction1() {
         var moreText1 = document.getElementById("project1");
         var moreText2 = document.getElementById("project2");
         var moreText3 = document.getElementById("project3");
         var moreText4 = document.getElementById("project4");
-        // var moreText5 = document.getElementById("project5");
-        // var moreText6 = document.getElementById("project6");
-        var btnText = document.getElementById("myBtn");
-        var btnText = document.getElementById("myBtn1");
-        var btnText = document.getElementById("myBtn2");
-        var btnText = document.getElementById("myBtn3");
-        var btnText = document.getElementById("myBtn4");
-        // var btnText = document.getElementById("myBtn5");
-        // var btnText = document.getElementById("myBtn6");
-
-        if (moreText.style.display !== "none") {
-          moreText.style.display = "none";
+        var moreText5 = document.getElementById("project5");
+        var moreText6 = document.getElementById("project6");
+        var moreText7 = document.getElementById("project7");
+        var btnText1 = document.getElementById("myBtn1");
+        var btnText2 = document.getElementById("myBtn2");
+        var btnText3 = document.getElementById("myBtn3");
+        var btnText4 = document.getElementById("myBtn4");
+        var btnText5 = document.getElementById("myBtn5");
+        var btnText6 = document.getElementById("myBtn6");
+        var btnText7 = document.getElementById("myBtn7");
+        console.log("myFunction1")
+        console.log(moreText1.style.display)
+        if ((moreText1.style.display == "" || moreText1.style.display == "none")) {
+          console.log("IN IF")
+          // moreText.style.display = "inline";
           moreText1.style.display = "inline";
           moreText2.style.display = "none";
           moreText3.style.display = "none";
           moreText4.style.display = "none";
-          // moreText5.style.display = "none";
-          // moreText6.style.display = "none";
-        } else if (moreText1.style.display !== "none") {
-          moreText.style.display = "none";
+          moreText5.style.display = "none";
+          moreText6.style.display = "none";
+          moreText7.style.display = "none";
+        }
+      }
+
+      function myFunction2() {
+        var moreText1 = document.getElementById("project1");
+        var moreText2 = document.getElementById("project2");
+        var moreText3 = document.getElementById("project3");
+        var moreText4 = document.getElementById("project4");
+        var moreText5 = document.getElementById("project5");
+        var moreText6 = document.getElementById("project6");
+        var moreText7 = document.getElementById("project7");
+        var btnText1 = document.getElementById("myBtn1");
+        var btnText2 = document.getElementById("myBtn2");
+        var btnText3 = document.getElementById("myBtn3");
+        var btnText4 = document.getElementById("myBtn4");
+        var btnText5 = document.getElementById("myBtn5");
+        var btnText6 = document.getElementById("myBtn6");
+        var btnText7 = document.getElementById("myBtn7");
+        console.log("myFunction2")
+        console.log(moreText2.style.display)
+        if ((moreText2.style.display == "" || moreText2.style.display == "none")) {
+          console.log("IN IF")
+          // moreText.style.display = "none";
           moreText1.style.display = "none";
           moreText2.style.display = "inline";
           moreText3.style.display = "none";
           moreText4.style.display = "none";
-          // moreText5.style.display = "none";
-          // moreText6.style.display = "none";
-        } else if (moreText2.style.display !== "none") {
-          moreText.style.display = "none";
+          moreText5.style.display = "none";
+          moreText6.style.display = "none";
+          moreText7.style.display = "none";
+        }
+      }
+
+      function myFunction3() {
+        var moreText1 = document.getElementById("project1");
+        var moreText2 = document.getElementById("project2");
+        var moreText3 = document.getElementById("project3");
+        var moreText4 = document.getElementById("project4");
+        var moreText5 = document.getElementById("project5");
+        var moreText6 = document.getElementById("project6");
+        var moreText7 = document.getElementById("project7");
+        var btnText1 = document.getElementById("myBtn1");
+        var btnText2 = document.getElementById("myBtn2");
+        var btnText3 = document.getElementById("myBtn3");
+        var btnText4 = document.getElementById("myBtn4");
+        var btnText5 = document.getElementById("myBtn5");
+        var btnText6 = document.getElementById("myBtn6");
+        var btnText7 = document.getElementById("myBtn7");
+        console.log("myFunction3")
+        console.log(moreText3.style.display)
+        if ((moreText3.style.display == "" || moreText3.style.display == "none")) {
+          console.log("IN IF")
+          // moreText.style.display = "none";
           moreText1.style.display = "none";
           moreText2.style.display = "none";
           moreText3.style.display = "inline";
           moreText4.style.display = "none";
-          // moreText5.style.display = "none";
-          // moreText6.style.display = "none";
-        } else if (moreText3.style.display !== "none") {
-          moreText.style.display = "none";
+          moreText5.style.display = "none";
+          moreText6.style.display = "none";
+          moreText7.style.display = "none";
+        }
+      }
+
+      function myFunction4() {
+        var moreText1 = document.getElementById("project1");
+        var moreText2 = document.getElementById("project2");
+        var moreText3 = document.getElementById("project3");
+        var moreText4 = document.getElementById("project4");
+        var moreText5 = document.getElementById("project5");
+        var moreText6 = document.getElementById("project6");
+        var moreText7 = document.getElementById("project7");
+        var btnText1 = document.getElementById("myBtn1");
+        var btnText2 = document.getElementById("myBtn2");
+        var btnText3 = document.getElementById("myBtn3");
+        var btnText4 = document.getElementById("myBtn4");
+        var btnText5 = document.getElementById("myBtn5");
+        var btnText6 = document.getElementById("myBtn6");
+        var btnText7 = document.getElementById("myBtn7");
+        console.log("myFunction4")
+        console.log(moreText4.style.display)
+        if ((moreText4.style.display == "" || moreText4.style.display == "none")) {
+          console.log("IN IF")
+          // moreText.style.display = "none";
           moreText1.style.display = "none";
           moreText2.style.display = "none";
           moreText3.style.display = "none";
           moreText4.style.display = "inline";
-          // moreText5.style.display = "none";
-          // moreText6.style.display = "none";
-        } else if (moreText4.style.display !== "none") {
-          moreText.style.display = "inline";
-          moreText1.style.display = "none";
-          moreText2.style.display = "none";
-          moreText3.style.display = "none";
-          moreText4.style.display = "none";
-          // moreText5.style.display = "inline";
-          // moreText6.style.display = "none";
-        } else {
-          moreText.style.display = "inline";
-          moreText1.style.display = "none";
-          moreText2.style.display = "none";
-          moreText3.style.display = "none";
-          moreText4.style.display = "none";
-          // moreText5.style.display = "none";
-          // moreText6.style.display = "none";
+          moreText5.style.display = "none";
+          moreText6.style.display = "none";
+          moreText7.style.display = "none";
         }
       }
+
+      function myFunction5() {
+        var moreText1 = document.getElementById("project1");
+        var moreText2 = document.getElementById("project2");
+        var moreText3 = document.getElementById("project3");
+        var moreText4 = document.getElementById("project4");
+        var moreText5 = document.getElementById("project5");
+        var moreText6 = document.getElementById("project6");
+        var moreText7 = document.getElementById("project7");
+        var btnText1 = document.getElementById("myBtn1");
+        var btnText2 = document.getElementById("myBtn2");
+        var btnText3 = document.getElementById("myBtn3");
+        var btnText4 = document.getElementById("myBtn4");
+        var btnText5 = document.getElementById("myBtn5");
+        var btnText6 = document.getElementById("myBtn6");
+        var btnText7 = document.getElementById("myBtn7");
+        console.log("myFunction5")
+        console.log(moreText5.style.display)
+        if ((moreText5.style.display == "" || moreText5.style.display == "none")) {
+          console.log("IN IF")
+          // moreText.style.display = "none";
+          moreText1.style.display = "none";
+          moreText2.style.display = "none";
+          moreText3.style.display = "none";
+          moreText4.style.display = "none";
+          moreText5.style.display = "inline";
+          moreText6.style.display = "none";
+          moreText7.style.display = "none";
+        }
+      }
+
+      function myFunction6() {
+        var moreText1 = document.getElementById("project1");
+        var moreText2 = document.getElementById("project2");
+        var moreText3 = document.getElementById("project3");
+        var moreText4 = document.getElementById("project4");
+        var moreText5 = document.getElementById("project5");
+        var moreText6 = document.getElementById("project6");
+        var moreText7 = document.getElementById("project7");
+        var btnText1 = document.getElementById("myBtn1");
+        var btnText2 = document.getElementById("myBtn2");
+        var btnText3 = document.getElementById("myBtn3");
+        var btnText4 = document.getElementById("myBtn4");
+        var btnText5 = document.getElementById("myBtn5");
+        var btnText6 = document.getElementById("myBtn6");
+        var btnText7 = document.getElementById("myBtn7");
+        console.log("myFunction6")
+        console.log(moreText6.style.display)
+        if ((moreText6.style.display == "" || moreText6.style.display == "none")) {
+          console.log("IN IF")
+          // moreText.style.display = "none";
+          moreText1.style.display = "none";
+          moreText2.style.display = "none";
+          moreText3.style.display = "none";
+          moreText4.style.display = "none";
+          moreText5.style.display = "none";
+          moreText6.style.display = "inline";
+          moreText7.style.display = "none";
+        }
+      }
+
+      function myFunction7() {
+        var moreText1 = document.getElementById("project1");
+        var moreText2 = document.getElementById("project2");
+        var moreText3 = document.getElementById("project3");
+        var moreText4 = document.getElementById("project4");
+        var moreText5 = document.getElementById("project5");
+        var moreText6 = document.getElementById("project6");
+        var moreText7 = document.getElementById("project7");
+        var moreText7 = document.getElementById("project7");
+        var btnText1 = document.getElementById("myBtn1");
+        var btnText2 = document.getElementById("myBtn2");
+        var btnText3 = document.getElementById("myBtn3");
+        var btnText4 = document.getElementById("myBtn4");
+        var btnText5 = document.getElementById("myBtn5");
+        var btnText6 = document.getElementById("myBtn6");
+        var btnText7 = document.getElementById("myBtn7");
+        console.log("myFunction7")
+        console.log(moreText7.style.display)
+        if ((moreText7.style.display == "" || moreText7.style.display == "none")) {
+          console.log("IN IF")
+          // moreText.style.display = "none";
+          moreText1.style.display = "none";
+          moreText2.style.display = "none";
+          moreText3.style.display = "none";
+          moreText4.style.display = "none";
+          moreText5.style.display = "none";
+          moreText6.style.display = "none";
+          moreText7.style.display = "inline";
+        }
+      }
+
+      var header = document.getElementById("myDIV");
+      var btns = header.getElementsByClassName("tabs-primary");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("activate");
+          current[0].className = current[0].className.replace(" activate", "");
+          this.className += " activate";
+        });
+      }
+
+      // function myFunction() {
+      //   // var dots = document.getElementById("dots");
+      //   var moreText = document.getElementById("project");
+      //   var moreText1 = document.getElementById("project1");
+      //   var moreText2 = document.getElementById("project2");
+      //   var moreText3 = document.getElementById("project3");
+      //   var moreText4 = document.getElementById("project4");
+      //   var moreText5 = document.getElementById("project5");
+      //   var moreText6 = document.getElementById("project6");
+      //   var btnText = document.getElementById("myBtn");
+      //   var btnText1 = document.getElementById("myBtn1");
+      //   var btnText = document.getElementById("myBtn2");
+      //   var btnText = document.getElementById("myBtn3");
+      //   var btnText = document.getElementById("myBtn4");
+      //   var btnText = document.getElementById("myBtn5");
+      //   var btnText = document.getElementById("myBtn6");
+
+      //   // if (moreText.style.display !== "none") {
+      //   //   moreText.style.display = "none";
+      //   //   moreText1.style.display = "inline";
+      //   //   moreText2.style.display = "none";
+      //   //   moreText3.style.display = "none";
+      //   //   moreText4.style.display = "none";
+      //   //   moreText5.style.display = "none";
+      //   //   moreText6.style.display = "none";
+      //   // } else if (moreText1.style.display !== "none") {
+      //   //   moreText.style.display = "none";
+      //   //   moreText1.style.display = "none";
+      //   //   moreText2.style.display = "inline";
+      //   //   moreText3.style.display = "none";
+      //   //   moreText4.style.display = "none";
+      //   //   moreText5.style.display = "none";
+      //   //   moreText6.style.display = "none";
+      //   // } else if (moreText2.style.display !== "none") {
+      //   //   moreText.style.display = "none";
+      //   //   moreText1.style.display = "none";
+      //   //   moreText2.style.display = "none";
+      //   //   moreText3.style.display = "inline";
+      //   //   moreText4.style.display = "none";
+      //   //   moreText5.style.display = "none";
+      //   //   moreText6.style.display = "none";
+      //   // } else if (moreText3.style.display !== "none") {
+      //   //   moreText.style.display = "none";
+      //   //   moreText1.style.display = "none";
+      //   //   moreText2.style.display = "none";
+      //   //   moreText3.style.display = "none";
+      //   //   moreText4.style.display = "inline";
+      //   //   moreText5.style.display = "none";
+      //   //   moreText6.style.display = "none";
+      //   // } else if (moreText4.style.display !== "none") {
+      //   //   moreText.style.display = "none";
+      //   //   moreText1.style.display = "none";
+      //   //   moreText2.style.display = "non4";
+      //   //   moreText3.style.display = "none";
+      //   //   moreText4.style.display = "none";
+      //   //   moreText5.style.display = "inline";
+      //   //   moreText6.style.display = "none";
+      //   // } else if (moreText5.style.display !== "none") {
+      //   //   moreText.style.display = "none";
+      //   //   moreText1.style.display = "none";
+      //   //   moreText2.style.display = "none";
+      //   //   moreText3.style.display = "none";
+      //   //   moreText4.style.display = "none";
+      //   //   moreText5.style.display = "none";
+      //   //   moreText6.style.display = "inline";
+      //   // } else {
+      //   //   moreText.style.display = "inline";
+      //   //   moreText1.style.display = "none";
+      //   //   moreText2.style.display = "none";
+      //   //   moreText3.style.display = "none";
+      //   //   moreText4.style.display = "none";
+      //   //   moreText5.style.display = "none";
+      //   //   moreText6.style.display = "none";
+      //   // }
+      // }
     </script>
 </body>
 
